@@ -1,4 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Clean URL handling (Remove .html from address bar without breaking navigation)
+    if (window.location.pathname.endsWith('.html')) {
+        const cleanUrl = window.location.pathname.replace(/\.html$/, '') + window.location.search + window.location.hash;
+        window.history.replaceState(null, '', cleanUrl);
+    }
+
     // 0. Custom Cursor Logic
     const cursor = document.createElement('div');
     cursor.className = 'custom-cursor';
@@ -59,18 +65,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
 
-        // Fast percentage loading ensuring 100% hits quickly
+        // Wait for page load before finishing
         let currentProgress = 0;
+        let isLoaded = document.readyState === 'complete';
+        
+        window.addEventListener('load', () => {
+            isLoaded = true;
+        });
+
         const progressInterval = setInterval(() => {
-            currentProgress += Math.random() * 40;
-            if (currentProgress >= 100) {
+            if (currentProgress < 90) {
+                currentProgress += Math.random() * 15;
+            } else if (isLoaded) {
                 currentProgress = 100;
                 clearInterval(progressInterval);
                 hidePreloader();
             }
             if (preloaderBar) {
                 preloaderBar.style.width = Math.min(currentProgress, 100) + '%';
-                preloaderBar.style.transition = 'width 0.15s ease-out';
+                preloaderBar.style.transition = 'width 0.1s ease-out';
             }
         }, 100);
 
@@ -142,8 +155,8 @@ document.addEventListener('DOMContentLoaded', () => {
         if (document.readyState === 'complete') {
             hidePreloader();
         } else {
-            window.addEventListener('load', hidePreloader);
-            setTimeout(hidePreloader, 2500); // 2.5s absolute timeout to allow slightly more time for cinematic GSAP
+            // Let the interval handle it via the isLoaded flag, but keep a very long failsafe
+            setTimeout(hidePreloader, 10000); 
         }
 
         // Ultimate failsafe
@@ -152,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 preloader.style.display = 'none';
                 document.body.style.overflow = '';
             }
-        }, 3500);
+        }, 12000);
     }
 
     // 6. Theme Toggle Logic
