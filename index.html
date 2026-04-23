@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraft Pack | مصنع الكرتون المضلع والتغليف</title>
+    <meta name="title" content="Kraft Pack | مصنع الكرتون المضلع والتغليف الأفضل في مصر">
+    <meta name="description" content="كرافت باك - شريكك الموثوق في حلول الكرتون المضلع. نوفر حماية فائقة لمنتجاتك واعتمادية تامة للشركات والمصانع بأفضل جودة وخامات، وأحدث تقنيات الطباعة.">
+    <meta name="keywords" content="كرتون مضلع, كرافت باك, صناديق كرتون, تغليف وتعبئة, مصنع كرتون, طباعة فلكسو, Kraft Pack, Corrugated boxes, مصر">
+    <meta name="author" content="Kraft Pack">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kraftpack.com/">
+    <meta property="og:title" content="Kraft Pack | مصنع الكرتون المضلع والتغليف">
+    <meta property="og:description" content="كرافت باك - شريكك الموثوق في حلول الكرتون المضلع. نوفر حماية فائقة لمنتجاتك واعتمادية تامة للشركات والمصانع بأفضل جودة وخامات.">
+    <meta property="og:image" content="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957843/printed_boxes_ykdazt.png">
+    <meta property="og:site_name" content="Kraft Pack">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kraftpack.com/">
+    <meta name="twitter:title" content="Kraft Pack | مصنع الكرتون المضلع والتغليف">
+    <meta name="twitter:description" content="كرافت باك - شريكك الموثوق في حلول الكرتون المضلع. نوفر حماية فائقة لمنتجاتك واعتمادية تامة للشركات والمصانع بأفضل جودة وخامات.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957843/printed_boxes_ykdazt.png">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <!-- Google Fonts: Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Cairo', 'sans-serif'] },
+                    colors: {
+                        kraft: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706', 700: '#b45309', 800: '#92400e' }
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dojt3kryr/image/upload/v1776023462/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_k6z9uu.png">
+</head>
+<body class="selection:bg-kraft-600 selection:text-white flex flex-col min-h-screen">
+    <!-- Liquid Orbs Background -->
+    <div class="bg-orb orb-kraft"></div>
+    <div class="bg-orb orb-white"></div>
+
+    <!-- Mobile App Dock -->
+    <nav class="mobile-dock flex lg:hidden">
+        <a href="index.html" class="dock-item active" data-tooltip="الرئيسية" data-tt="tip-home"><i class="fa-solid fa-home text-xl"></i></a>
+        <a href="about.html" class="dock-item" data-tooltip="عن الشركة" data-tt="tip-about"><i class="fa-solid fa-building text-xl"></i></a>
+        <a href="products.html" class="dock-item" data-tooltip="المنتجات" data-tt="tip-products"><i class="fa-solid fa-box-open text-xl"></i></a>
+        <a href="quality.html" class="dock-item" data-tooltip="الجودة والتصنيع" data-tt="tip-quality"><i class="fa-solid fa-check-double text-xl"></i></a>
+        <a href="contact.html" class="dock-item" data-tooltip="تواصل معنا" data-tt="tip-contact"><i class="fa-solid fa-envelope text-xl"></i></a>
+    </nav>
+
+    <!-- Header -->
+    <header id="main-header" class="fixed top-0 w-full z-50 p-4 sm:p-6 transition-all duration-700">
+        <div class="max-w-7xl mx-auto flex justify-between items-center bg-black/40 backdrop-blur-3xl border border-white/10 rounded-[2.5rem] p-2.5 sm:p-3 shadow-[0_20px_50px_rgba(0,0,0,0.4)]">
+            <!-- Brand Identity -->
+            <div class="flex items-center gap-3 pr-4 ltr:pl-4">
+                <a href="index.html" class="block transition-transform hover:scale-105 active:scale-95">
+                    <img src="https://res.cloudinary.com/dojt3kryr/image/upload/f_auto,q_auto/v1776042845/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_1_yswqi1.png" class="h-10 md:h-12 w-auto object-contain brightness-110" alt="Kraft Pack">
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-2 p-1 bg-white/5 rounded-[1.5rem] border border-white/5 mx-auto">
+                <a href="index.html" class="px-6 py-2 text-white font-black text-sm rounded-xl bg-kraft-600/30 transition-all hover:bg-kraft-600/40" data-t="nav-home">الرئيسية</a>
+                <a href="about.html" class="px-6 py-2 text-gray-400 font-bold text-sm hover:text-white rounded-xl hover:bg-white/5 transition-all" data-t="nav-about">عن الشركة</a>
+                <a href="products.html" class="px-6 py-2 text-gray-400 font-bold text-sm hover:text-white rounded-xl hover:bg-white/5 transition-all" data-t="nav-products">المنتجات</a>
+                <a href="quality.html" class="px-6 py-2 text-gray-400 font-bold text-sm hover:text-white rounded-xl hover:bg-white/5 transition-all" data-t="nav-quality">الجودة</a>
+                <a href="contact.html" class="px-6 py-2 text-gray-400 font-bold text-sm hover:text-white rounded-xl hover:bg-white/5 transition-all" data-t="nav-contact">تواصل معنا</a>
+            </nav>
+
+            <!-- Global Actions -->
+            <div class="flex items-center gap-1.5 sm:gap-2 flex-nowrap">
+                <button id="theme-toggle" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex-shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all active:scale-90" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon text-sm"></i>
+                </button>
+                <button id="lang-toggle" class="w-8 h-8 sm:w-10 sm:h-10 rounded-full flex-shrink-0 bg-white/5 border border-white/10 flex items-center justify-center font-bold text-[10px] sm:text-xs text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all active:scale-90" aria-label="Toggle Language">
+                    EN
+                </button>
+                <div class="lg:hidden w-px h-6 bg-white/10 mx-1"></div>
+                <button id="mobile-menu-trigger" class="lg:hidden w-10 h-10 rounded-full bg-kraft-600 text-white flex items-center justify-center shadow-lg active:scale-90 transition-transform">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+                <a href="contact.html" class="hidden xs:flex items-center justify-center whitespace-nowrap px-4 py-2 sm:px-6 sm:py-2.5 bg-gradient-to-r from-kraft-600 to-kraft-500 hover:shadow-[0_0_25px_rgba(217,119,6,0.4)] text-white rounded-full text-[10px] sm:text-xs font-black transition-all active:scale-95" data-t="cta-pricing">
+                    اطلب الآن
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Full Screen Mobile Menu Overlay -->
+    <div id="mobile-menu-overlay" class="fixed inset-0 z-[100] bg-black/95 backdrop-blur-xl flex flex-col items-center justify-center opacity-0 pointer-events-none transition-all duration-500">
+        <button id="close-mobile-menu" class="absolute top-10 right-10 w-12 h-12 rounded-full border border-white/10 flex items-center justify-center text-white text-2xl">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="flex flex-col items-center gap-8 text-center">
+            <a href="index.html" class="text-3xl font-black text-white hover:text-kraft-500 transition-colors" data-t="nav-home">الرئيسية</a>
+            <a href="about.html" class="text-3xl font-black text-white hover:text-kraft-500 transition-colors" data-t="nav-about">عن الشركة</a>
+            <a href="products.html" class="text-3xl font-black text-white hover:text-kraft-500 transition-colors" data-t="nav-products">المنتجات</a>
+            <a href="quality.html" class="text-3xl font-black text-white hover:text-kraft-500 transition-colors" data-t="nav-quality">الجودة</a>
+            <a href="contact.html" class="text-3xl font-black text-white hover:text-kraft-500 transition-colors" data-t="nav-contact">تواصل معنا</a>
+        </div>
+    </div>
+
+    <!-- Cinematic Box Entrance Preloader for Home -->
+    <div id="preloader" class="fixed inset-0 z-[1000] flex items-center justify-center bg-transparent pointer-events-auto overflow-hidden">
+        <!-- Carton Doors (Left and Right) -->
+        <div class="carton-door carton-door-left absolute top-0 left-0 w-1/2 h-full bg-[#92400e] border-r border-[#78350f] shadow-[15px_0_30px_rgba(0,0,0,0.6)] z-10 flex overflow-hidden">
+            <div class="kraft-box-texture absolute inset-0 opacity-40 mix-blend-multiply"></div>
+        </div>
+        <div class="carton-door carton-door-right absolute top-0 right-0 w-1/2 h-full bg-[#92400e] border-l border-[#78350f] shadow-[-15px_0_30px_rgba(0,0,0,0.6)] z-10 flex overflow-hidden">
+            <div class="kraft-box-texture absolute inset-0 opacity-40 mix-blend-multiply"></div>
+        </div>
+
+        <!-- Cinema Icon Content -->
+        <div class="preloader-content flex flex-col items-center justify-center w-full max-w-[200px] relative z-30 opacity-100">
+            <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776023462/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_k6z9uu.png" class="preloader-icon-img w-28 md:w-36 mb-6 drop-shadow-[0_20px_20px_rgba(0,0,0,0.6)]" alt="Kraft Pack Icon">
+            <div class="w-full h-2 bg-black/60 rounded-full overflow-hidden mb-3 relative border border-white/5 shadow-inner">
+                <div class="h-full bg-kraft-400 rounded-full w-0 shadow-[0_0_10px_#fbbf24]" id="preloaderBar"></div>
+            </div>
+            <p class="text-sm font-black text-white/90 tracking-widest drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]" data-t="pre-home">كرافت باك...</p>
+        </div>
+    </div>
+
+    <main class="flex flex-col items-center justify-center min-h-[90vh]">
+        
+        <!-- HERO SECTION: CINEMATIC MASTERPIECE -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center relative z-10 pt-32 pb-16">
+            <div class="relative inline-flex items-center gap-2 mb-8 px-5 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl gsap-hero overflow-hidden group">
+                <div class="absolute inset-0 bg-gradient-to-r from-kraft-600/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform duration-700"></div>
+                <span class="relative w-2 h-2 rounded-full bg-kraft-500 animate-pulse"></span>
+                <span class="relative text-kraft-400 font-bold tracking-widest text-[10px] uppercase" data-t="hero-subtitle">الرائد في صناعة الكرتون المضلع</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-8xl lg:text-9xl font-black text-white mb-8 tracking-tighter leading-none gsap-hero" style="font-family: 'Cairo', sans-serif;">
+                KRAFT <span class="text-transparent bg-clip-text bg-gradient-to-b from-white to-white/40">PACK</span>
+            </h1>
+            
+            <p class="text-gray-400 max-w-2xl mx-auto text-sm md:text-xl mb-12 leading-relaxed gsap-hero opacity-80" data-t="hero-desc">
+                نصنع الحماية لمنتجاتكم بأعلى معايير الجودة العالمية. حلول تغليف ذكية ومبتكرة صُممت لتلبي طموحاتكم الصناعية.
+            </p>
+            
+            <div class="flex flex-col xs:flex-row gap-4 justify-center items-center gsap-hero">
+                <a href="contact.html" class="flex items-center gap-3 px-10 py-5 bg-white text-black rounded-full font-black text-sm transition-all hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.2)] active:scale-95 w-full xs:w-auto">
+                    <span data-t="cta-pricing">ابدأ مشروعك</span> 
+                    <i class="fa-solid fa-chevron-left rtl:fa-chevron-right text-[10px]"></i>
+                </a>
+                <a href="products.html" class="flex items-center gap-3 px-10 py-5 bg-transparent border border-white/20 text-white rounded-full font-bold text-sm transition-all hover:bg-white/5 active:scale-95 w-full xs:w-auto">
+                    <i class="fa-solid fa-cube opacity-50"></i>
+                    <span data-t="nav-products">استعرض المنتجات</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- VALUE PROPOSITION (CHIC CARDS) -->
+        <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-10">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gsap-reveal">
+                <div class="p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-kraft-500/10 flex items-center justify-center text-kraft-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-shield-check text-2xl"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">حماية مطلقة</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">تصميمات هندسية تضمن سلامة منتجاتكم في أصعب ظروف النقل.</p>
+                </div>
+                <div class="p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-leaf text-2xl"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">صديق للبيئة</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">مواد قابلة لإعادة التدوير بنسبة 100% تدعم أهداف الاستدامة لديكم.</p>
+                </div>
+                <div class="p-8 rounded-[2.5rem] bg-white/[0.02] border border-white/5 hover:border-white/20 transition-all group">
+                    <div class="w-12 h-12 rounded-2xl bg-kraft-500/10 flex items-center justify-center text-kraft-500 mb-6 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-bolt text-2xl"></i>
+                    </div>
+                    <h3 class="text-white font-bold text-lg mb-3">سرعة فائقة</h3>
+                    <p class="text-gray-500 text-sm leading-relaxed">خطوط إنتاج آلية تضمن تسليم طلبياتكم في أوقات قياسية.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTORS SERVED: BENTO STYLE GRID -->
+        <section class="w-full py-24 bg-[#080808] border-y border-white/5 relative overflow-hidden" id="sectors-section">
+            <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(217,119,6,0.08)_0%,transparent_75%)] pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center mb-20 section-header-reveal">
+                    <span class="text-kraft-500 font-bold tracking-widest text-[10px] uppercase mb-3 block">قطاعـات العملاء</span>
+                    <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight" data-t="sec-title">القطاعات التي نخدمها</h2>
+                    <p class="mt-6 text-gray-400 max-w-xl mx-auto text-sm md:text-base opacity-70" data-t="sec-desc">نلبي احتياجات مجموعة واسعة من الصناعات بحلول تغليف مبتكرة ومخصصة مصممة خصيصاً لكل قطاع.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-[240px]">
+                    <!-- Item 1: FMCG -->
+                    <div class="sector-card relative group overflow-hidden rounded-[2.5rem] md:col-span-2 lg:col-span-2 p-10 border border-white/10 hover:border-kraft-500/40 transition-all duration-700 bg-black/40 backdrop-blur-md">
+                        <div class="absolute -right-4 -top-4 w-40 h-40 bg-kraft-600/5 blur-[50px] group-hover:bg-kraft-600/10 transition-all"></div>
+                        <div class="relative z-20 flex flex-col h-full justify-between">
+                            <div class="w-14 h-14 rounded-2xl bg-kraft-500/10 flex items-center justify-center text-kraft-400 group-hover:scale-110 transition-transform">
+                                <i class="fa-solid fa-basket-shopping text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-white mb-2" data-t="sec-1">السلع الاستهلاكية</h3>
+                                <p class="text-gray-500 text-xs font-medium">FMCG & Retail Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Item 2: Food -->
+                    <div class="sector-card relative group overflow-hidden rounded-[2.5rem] md:col-span-1 lg:col-span-2 p-10 border border-white/10 hover:border-kraft-500/40 transition-all duration-700 bg-black/40 backdrop-blur-md">
+                        <div class="absolute -left-4 -bottom-4 w-40 h-40 bg-orange-600/5 blur-[50px]"></div>
+                        <div class="relative z-20 flex flex-col h-full justify-between">
+                            <div class="w-14 h-14 rounded-2xl bg-orange-500/10 flex items-center justify-center text-orange-400">
+                                <i class="fa-solid fa-utensils text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-white mb-2" data-t="sec-2">الصناعات الغذائية</h3>
+                                <p class="text-gray-500 text-xs font-medium">Safe & Durable Storage</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3: E-commerce -->
+                    <div class="sector-card relative group overflow-hidden rounded-[2.5rem] md:col-span-2 lg:col-span-1 p-10 border border-white/10 hover:border-kraft-500/40 transition-all duration-700 bg-black/40 backdrop-blur-md">
+                        <div class="relative z-20 flex flex-col h-full justify-between">
+                            <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/40 group-hover:text-kraft-400">
+                                <i class="fa-solid fa-cart-arrow-down text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-black text-white mb-2" data-t="sec-3">التجارة الإلكترونية</h3>
+                                <p class="text-gray-500 text-xs font-medium">Swift & Reliable Shipping</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Agriculture -->
+                    <div class="sector-card relative group overflow-hidden rounded-[2.5rem] md:col-span-1 lg:col-span-2 p-10 border border-white/10 hover:border-kraft-500/40 transition-all duration-700 bg-black/40 backdrop-blur-md">
+                        <div class="relative z-20 flex flex-col h-full justify-between">
+                            <div class="w-12 h-12 rounded-2xl bg-green-500/10 flex items-center justify-center text-green-400">
+                                <i class="fa-solid fa-seedling text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-black text-white mb-2" data-t="sec-5">الزراعة</h3>
+                                <p class="text-gray-500 text-xs font-medium">Fresh Produce Protection</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 5: Industrial -->
+                    <div class="sector-card relative group overflow-hidden rounded-[2.5rem] md:col-span-1 lg:col-span-1 p-10 border border-white/10 hover:border-kraft-500/40 transition-all duration-700 bg-gradient-to-br from-kraft-900/10 to-transparent backdrop-blur-md">
+                        <div class="relative z-20 flex flex-col h-full justify-between">
+                            <div class="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-white/30">
+                                <i class="fa-solid fa-gears text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-black text-white mb-2" data-t="sec-4">صناعات متنوعة</h3>
+                                <p class="text-gray-500 text-xs font-medium">Heavy Duty Engineering</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- INDUSTRY SOLUTIONS: PROFESSIONAL BENTO GRID -->
+        <section class="w-full py-32 bg-[#050505] relative overflow-hidden" id="industry-solutions">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(217,119,6,0.05)_0%,transparent_60%)] pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8 section-header-reveal">
+                    <div class="max-w-2xl">
+                        <span class="px-4 py-1.5 bg-kraft-500/10 border border-kraft-500/20 text-kraft-500 text-[10px] font-black uppercase tracking-[0.3em] rounded-full mb-6 inline-block">Industry Verticals</span>
+                        <h2 class="text-4xl md:text-6xl font-black text-white leading-tight mb-6" data-t="ind-title">حلول التغليف لكل صناعة</h2>
+                        <p class="text-gray-500 text-lg md:text-xl font-medium leading-relaxed" data-t="ind-subtitle">نقدم خبراتنا المتعددة في مجالات التغليف لتناسب متطلبات كل قطاع صناعي وتجاري بكفاءة وجودة لا تضاهى.</p>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-6 gsap-reveal">
+                    <!-- Industry 1: Food & Beverage (Large) -->
+                    <div class="md:col-span-8 group relative overflow-hidden rounded-[3rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?q=80&w=2071&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-1000" alt="Food & Beverage">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-12 flex flex-col justify-end">
+                            <div class="flex items-center gap-4 mb-6">
+                                <div class="w-14 h-14 rounded-2xl bg-kraft-500 flex items-center justify-center text-black shadow-[0_0_30px_rgba(217,119,6,0.3)]">
+                                    <i class="fa-solid fa-utensils text-2xl"></i>
+                                </div>
+                                <h3 class="text-3xl font-black text-white" data-t="ind-food">خدمات الطعام والشراب</h3>
+                            </div>
+                            <p class="text-gray-400 text-lg max-w-lg mb-0 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-500">حلول تغليف آمنة وصحية تحافظ على جودة المنتجات الغذائية وتدعم العرض الجذاب للعلامة التجارية.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 2: E-Commerce -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-[3rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1566576721346-d4a3b4eaad21?q=80&w=1965&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-1000" alt="E-commerce">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-12 flex flex-col justify-end">
+                            <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 group-hover:bg-kraft-500 group-hover:text-black transition-colors">
+                                <i class="fa-solid fa-cart-shopping text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white mb-2" data-t="ind-ecom">التجارة الإلكترونية</h3>
+                            <p class="text-gray-500 text-sm opacity-0 group-hover:opacity-100 transition-opacity">صناديق شحن متينة تتحمل ظروف النقل المتعددة وتضمن وصول المنتج بأمان.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 3: Medical -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-[3rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1584017911766-d451b3d0e843?q=80&w=2029&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-1000" alt="Medical">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-12 flex flex-col justify-end">
+                            <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 group-hover:bg-green-500 transition-colors">
+                                <i class="fa-solid fa-truck-medical text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white mb-2" data-t="ind-med">الخدمات الطبية والدوائية</h3>
+                            <p class="text-gray-500 text-sm opacity-0 group-hover:opacity-100 transition-opacity">تغليف دقيق للمعدات والأدوية يمنع التلوث ويضمن الحماية الفائقة.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 4: Industrial Parts -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-[3rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-1000" alt="Industrial">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-12 flex flex-col justify-end">
+                            <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 group-hover:bg-kraft-600 transition-colors">
+                                <i class="fa-solid fa-gears text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white mb-2" data-t="ind-parts">قطع الغيار الصناعية</h3>
+                            <p class="text-gray-500 text-sm opacity-0 group-hover:opacity-100 transition-opacity">حلول قوية تتحمل الزيوت والقطع الثقيلة بفاعلية تامة.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 5: Agriculture -->
+                    <div class="md:col-span-4 group relative overflow-hidden rounded-[3rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent h-[400px]">
+                        <img src="https://images.unsplash.com/photo-1615485290382-441e4d0c9cb5?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:scale-110 group-hover:grayscale-0 transition-all duration-1000" alt="Agriculture">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-12 flex flex-col justify-end">
+                            <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white mb-6 group-hover:bg-green-600 transition-colors">
+                                <i class="fa-solid fa-seedling text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-black text-white mb-2" data-t="ind-agri">الزراعة والمنتجات</h3>
+                            <p class="text-gray-500 text-sm opacity-0 group-hover:opacity-100 transition-opacity">كرتون عالي الرطوبة يضمن التهوية السليمة والحماية.</p>
+                        </div>
+                    </div>
+
+                    <!-- Industry 6: Household Goods -->
+                    <div class="md:col-span-12 group relative overflow-hidden rounded-[3rem] border border-white/5 bg-gradient-to-br from-white/[0.03] to-transparent h-[300px] mt-2">
+                        <img src="https://images.unsplash.com/photo-1583947215259-38e31be8751f?q=80&w=2070&auto=format&fit=crop" class="absolute inset-0 w-full h-full object-cover opacity-20 grayscale group-hover:scale-105 group-hover:grayscale-0 transition-all duration-1000" alt="Household">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent p-12 flex flex-col justify-end">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+                                <div class="flex items-center gap-4">
+                                    <div class="w-14 h-14 rounded-2xl bg-white/10 backdrop-blur-md flex items-center justify-center text-white group-hover:bg-kraft-400 transition-colors">
+                                        <i class="fa-solid fa-house-chimney text-2xl"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-3xl font-black text-white" data-t="ind-home">السلع المنزلية والأجهزة</h3>
+                                        <p class="text-gray-500 text-sm font-bold uppercase tracking-widest mt-1">Durability Meets Design</p>
+                                    </div>
+                                </div>
+                                <p class="text-gray-400 text-lg max-w-md mb-0 opacity-0 group-hover:opacity-100 transition-opacity">حلول تغليف ذكية للأجهزة المنزلية تضمن الحماية من الصدمات والضغط.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED PRODUCTS SECTION: VISUAL SHOWCASE -->
+        <section class="w-full py-24 bg-black relative" id="products-showcase">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 section-header-reveal">
+                    <div class="text-right ltr:text-left">
+                        <span class="text-kraft-500 font-bold tracking-widest text-[10px] uppercase mb-3 block">المنتجات المميزة</span>
+                        <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight" data-t="prod-title">حلول التغليف لدينا</h2>
+                    </div>
+                    <a href="products.html" class="group flex items-center gap-3 text-kraft-400 font-bold text-sm hover:text-white transition-all">
+                        <span data-t="nav-products">عرض كافة المنتجات</span>
+                        <i class="fa-solid fa-arrow-left ltr:fa-arrow-right group-hover:-translate-x-2 ltr:group-hover:translate-x-2 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 gsap-reveal">
+                    <!-- Product 1: Corrugated Boxes -->
+                    <div class="flip-card flex-1">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front shadow-2xl">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957840/corrugated_boxes_m2tauh.png" class="w-full h-full object-cover transition-all duration-700" alt="Corrugated Boxes">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-10 left-0 right-0 text-center px-6">
+                                    <h3 class="text-2xl font-black text-white mb-2" data-t="prod-box-t">علب كرتون مضلع</h3>
+                                    <div class="w-12 h-1 bg-kraft-500 mx-auto rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="w-12 h-12 rounded-2xl bg-kraft-500/10 border border-kraft-500/20 flex items-center justify-center text-kraft-400 mb-6 mx-auto">
+                                    <i class="fa-solid fa-box text-xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-4" data-t="prod-box-t">علب كرتون مضلع</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6" data-t="prod-box-d">تجمع بين القوة الهيكلية وخفة الوزن لتوفير أقصى درجات الحماية لمنتجاتكم.</p>
+                                <div class="flex justify-center items-center gap-4 text-[10px] font-black uppercase tracking-widest text-kraft-600">
+                                    <span>3 Layers</span>
+                                    <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                                    <span>5 Layers</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 2: Corrugated Sheets -->
+                    <div class="flip-card flex-1">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front shadow-2xl">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957841/corrugated_sheets_vu4dsl.png" class="w-full h-full object-cover grayscale-[30%]" alt="Corrugated Sheets">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-10 left-0 right-0 text-center px-6">
+                                    <h3 class="text-2xl font-black text-white mb-2" data-t="prod-sheet-t">الواح الكرتون المضلع (Sheets)</h3>
+                                    <div class="w-12 h-1 bg-kraft-500 mx-auto rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="w-12 h-12 rounded-2xl bg-kraft-500/10 border border-kraft-500/20 flex items-center justify-center text-kraft-400 mb-6 mx-auto">
+                                    <i class="fa-solid fa-layer-group text-xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-4" data-t="prod-sheet-t">الواح الكرتون المضلع (Sheets)</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6" data-t="prod-sheet-d">ألواح عالية الجودة بمختلف أنواع الفلوت، مصممة لتطبيقات التغليف والحماية الصناعية.</p>
+                                <div class="flex justify-center items-center gap-4 text-[10px] font-black uppercase tracking-widest text-kraft-600">
+                                    <span>Multi-Size</span>
+                                    <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                                    <span>Custom GSM</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Product 3: Printed Boxes -->
+                    <div class="flip-card flex-1">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front shadow-2xl">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957843/printed_boxes_ykdazt.png" class="w-full h-full object-cover grayscale-[30%]" alt="Printed Boxes">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-10 left-0 right-0 text-center px-6">
+                                    <h3 class="text-2xl font-black text-white mb-2" data-t="prod-print-t">علب كرتون مطبوعة</h3>
+                                    <div class="w-12 h-1 bg-kraft-500 mx-auto rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="w-12 h-12 rounded-2xl bg-kraft-500/10 border border-kraft-500/20 flex items-center justify-center text-kraft-400 mb-6 mx-auto">
+                                    <i class="fa-solid fa-print text-xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-4" data-t="prod-print-t">علب كرتون مطبوعة</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6" data-t="prod-print-d">إبراز هوية شركتكم بألوان واضحة وتقنيات طباعة فلكسو متطورة تدعم التسويق لمنتجاتكم.</p>
+                                <div class="flex justify-center items-center gap-4 text-[10px] font-black uppercase tracking-widest text-kraft-600">
+                                    <span>CMYK + Spot</span>
+                                    <span class="w-1 h-1 rounded-full bg-white/20"></span>
+                                    <span>High Fidelity</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Row 2 Products Balanced -->
+                    <div class="flip-card flex-1 sm:col-span-2 lg:col-span-1 lg:col-start-1">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front shadow-2xl">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957846/custom_packaging_cjhjei.png" class="w-full h-full object-cover grayscale-[30%]" alt="Custom Packaging">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent"></div>
+                                <div class="absolute bottom-10 left-0 right-0 text-center px-6">
+                                    <h3 class="text-2xl font-black text-white mb-2" data-t="prod-custom-t">حلول تغليف مخصصة</h3>
+                                    <div class="w-12 h-1 bg-kraft-500 mx-auto rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="w-12 h-12 rounded-2xl bg-kraft-500/10 border border-kraft-500/20 flex items-center justify-center text-kraft-400 mb-6 mx-auto">
+                                    <i class="fa-solid fa-pen-ruler text-xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-black text-white mb-4" data-t="prod-custom-t">حلول تغليف مخصصة</h3>
+                                <p class="text-gray-400 text-sm leading-relaxed mb-6" data-t="prod-custom-d">نقدم حلول مصممة خصيصًا حسب احتياجات العميل من حيث المقاسات والخامات لتحقيق التوازن المثالي.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flip-card flex-1 sm:col-span-2 lg:col-span-2 lg:col-start-2">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front shadow-2xl">
+                                <div class="absolute inset-0 bg-kraft-900/40 backdrop-blur-sm z-10"></div>
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957847/flexo_printing_eekfft.png" class="w-full h-full object-cover" alt="Flexo Technology">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/30 to-transparent z-20"></div>
+                                <div class="absolute inset-0 flex flex-col items-center justify-center z-30 p-10">
+                                    <h3 class="text-4xl font-black text-white text-center mb-4" data-t="prod-tech-t">تقنيات الطباعة فلكسو</h3>
+                                    <div class="w-20 h-1 bg-kraft-500 rounded-full"></div>
+                                </div>
+                            </div>
+                            <div class="flip-card-back">
+                                <div class="w-16 h-16 rounded-full bg-kraft-500/20 flex items-center justify-center text-kraft-400 mb-8 mx-auto">
+                                    <i class="fa-solid fa-gears text-2xl"></i>
+                                </div>
+                                <h3 class="text-3xl font-black text-white mb-6" data-t="prod-tech-t">تقنيات الطباعة فلكسو</h3>
+                                <p class="text-gray-300 text-base leading-relaxed mb-8 max-w-sm mx-auto" data-t="prod-flexo-d">أحداث ماكينات الطباعة الفلكسوجرافيك التي تضمن سرعة الإنتاج ودقة الألوان للأعمال الكبيرة.</p>
+                                <div class="inline-block px-6 py-2 bg-kraft-500 text-black font-black uppercase text-[10px] tracking-widest rounded-full">High-Speed Engine</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- WHY KRAFT PACK: MINIMALIST PROFESSIONAL -->
+        <section class="py-24 w-full relative z-10" id="why-section">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                
+                <div class="flex flex-col items-center text-center mb-20 section-header-reveal">
+                    <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight mb-6" data-t="why-title">القيمة المضافة</h2>
+                    <p class="text-gray-400 max-w-2xl text-sm md:text-base opacity-70" data-t="why-desc">نحن نؤمن بأن الجودة والتفاني هما أساس النجاح، وهذا ما نقدمه لشركائنا في كل مرحلة.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <!-- Feature 1 -->
+                    <div class="why-card p-8 rounded-[2rem] border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-all group">
+                        <div class="w-10 h-10 rounded-xl bg-kraft-500/10 flex items-center justify-center text-kraft-500 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-tag"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3" data-t="why-price-t">سعر عادل</h4>
+                        <p class="text-gray-500 text-xs leading-relaxed" data-t="why-price-d">توازن حقيقي بين الجودة والتكلفة الاقتصادية.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="why-card p-8 rounded-[2rem] border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-all group">
+                        <div class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white/40 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3" data-t="why-speed-t">سرعة التنفيذ</h4>
+                        <p class="text-gray-500 text-xs leading-relaxed" data-t="why-speed-d">التزام تام بمواعيد التوريد لضمان استمرارية العمل.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="why-card p-8 rounded-[2rem] border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-all group">
+                        <div class="w-10 h-10 rounded-xl bg-kraft-500/10 flex items-center justify-center text-kraft-500 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-handshake-angle"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3" data-t="why-support-t">دعم فني</h4>
+                        <p class="text-gray-500 text-xs leading-relaxed" data-t="why-support-d">استشارات فنية متكاملة لاختيار الحل الأمثل لمنتجك.</p>
+                    </div>
+                    <!-- Feature 4 -->
+                    <div class="why-card p-8 rounded-[2rem] border border-white/5 bg-white/[0.01] hover:bg-white/[0.03] transition-all group">
+                        <div class="w-10 h-10 rounded-xl bg-green-500/10 flex items-center justify-center text-green-400 mb-6 group-hover:scale-110 transition-transform">
+                            <i class="fa-solid fa-check-double"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-3" data-t="why-qual-t">جودة مستدامة</h4>
+                        <p class="text-gray-500 text-xs leading-relaxed" data-t="why-qual-d">رقابة صارمة في كل مرحلة لضمان ثبات المواصفات.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- STATISTICS & METRICS SECTION (INDUSTRIAL BENTO DASHBOARD) -->
+        <section class="py-24 w-full relative z-10 bg-[#050505] border-y border-white/5 overflow-hidden" id="stats-section">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(217,119,6,0.1)_0%,transparent_60%)] pointer-events-none"></div>
+            <div class="absolute top-0 left-0 w-full h-full opacity-[0.03] pointer-events-none" style="background-image: radial-gradient(#fff 1px, transparent 1px); background-size: 40px 40px;"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                
+                <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6 section-header-reveal">
+                    <div>
+                        <span class="text-kraft-500 font-bold tracking-widest text-xs uppercase mb-3 block" data-t="stats-eyebrow">التميز الصناعي</span>
+                        <h2 class="text-4xl md:text-5xl font-black text-white tracking-tight" data-t="stats-title">عملياتنا بالأرقام</h2>
+                    </div>
+                    <p class="text-gray-400 max-w-sm text-sm border-r-2 ltr:border-r-0 ltr:border-l-2 border-kraft-600 pr-4 ltr:pr-0 ltr:pl-4 opacity-80" data-t="stats-desc">تجسيد للالتزام، الجودة، والنمو المستمر في قلب الصناعة المصرية.</p>
+                </div>
+
+                <!-- High-End Bento Grid Layout -->
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-5 md:auto-rows-[160px] stats-reveal">
+                    
+                    <!-- Hero Metric: Production (Full height on mobile, spans columns on desktop) -->
+                    <div class="md:col-span-8 md:row-span-3 glass-card p-10 md:p-14 rounded-[3rem] border border-white/10 flex flex-col justify-between overflow-hidden relative group min-h-[450px]">
+                        <div class="absolute -right-20 -top-20 w-[400px] h-[400px] bg-kraft-600/10 blur-[120px] group-hover:bg-kraft-600/20 transition-all duration-1000"></div>
+                        <div class="relative z-10">
+                            <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-kraft-500/10 border border-kraft-500/20 text-kraft-500 text-[10px] font-black uppercase tracking-widest mb-10">
+                                <i class="fa-solid fa-industry"></i>
+                                <span data-t="stats-eyebrow">التميز الصناعي</span>
+                            </div>
+                            <h3 class="text-gray-400 font-bold text-sm uppercase tracking-widest mb-6" data-t="stats-1-l">إجمالي الإنتاج السنوي</h3>
+                            <div class="text-white text-7xl md:text-9xl font-black tracking-tighter flex items-baseline gap-4">
+                                <span class="counter" data-target="12">0</span>
+                                <span class="text-kraft-500 text-5xl mb-6">M+</span>
+                            </div>
+                        </div>
+                        <div class="relative z-10 mt-auto">
+                            <div class="flex items-center justify-between mb-6">
+                                <div class="flex items-center gap-3 text-kraft-400 font-extrabold text-sm">
+                                    <i class="fa-solid fa-arrow-trend-up"></i>
+                                    <span data-t="stats-1-u">نمو بنسبة 15% عن العام الماضي</span>
+                                </div>
+                                <span class="text-gray-600 text-[10px] font-mono tracking-widest uppercase">Performance Index</span>
+                            </div>
+                            <div class="w-full h-3 bg-white/5 rounded-full overflow-hidden border border-white/5 relative">
+                                <div class="h-full bg-gradient-to-r from-kraft-600 via-kraft-400 to-amber-300 w-[85%] rounded-full shadow-[0_0_25px_rgba(217,119,6,0.4)] relative">
+                                    <div class="absolute inset-0 bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.2)_50%,transparent_100%)] animate-[shimmer_2s_infinite]"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Clients Card -->
+                    <div class="md:col-span-4 md:row-span-2 glass-card p-10 rounded-[3rem] border border-white/10 flex flex-col justify-center group overflow-hidden relative">
+                        <div class="absolute -right-4 -bottom-4 w-40 h-40 bg-kraft-500/5 blur-[60px] group-hover:bg-kraft-500/10 transition-all duration-700"></div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center text-white/50 mb-8 group-hover:text-kraft-400 group-hover:border-kraft-500/30 transition-all duration-500">
+                                <i class="fa-solid fa-handshake text-2xl"></i>
+                            </div>
+                            <h3 class="text-gray-400 font-bold text-[10px] uppercase tracking-[0.2em] mb-4" data-t="stats-2-l">شركاء النجاح</h3>
+                            <div class="text-white text-6xl font-black tracking-tighter mb-4">
+                                <span class="counter" data-target="450">0</span><span class="text-kraft-500 font-light">+</span>
+                            </div>
+                            <p class="text-[11px] text-gray-500 font-medium leading-relaxed max-w-[200px]" data-t="stats-2-u">خدمة كبرى الشركات في السوق المحلي والدولي.</p>
+                        </div>
+                    </div>
+
+                    <!-- Small Highlight: Products -->
+                    <div class="md:col-span-4 md:row-span-1 glass-card p-8 rounded-[2.5rem] border border-white/10 flex items-center gap-6 group hover:border-kraft-500/40 transition-all duration-500">
+                        <div class="w-14 h-14 shrink-0 rounded-2xl bg-kraft-500/10 flex items-center justify-center text-kraft-400 group-hover:scale-110 transition-transform duration-500">
+                            <i class="fa-solid fa-tags text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="text-white text-3xl font-black tracking-tighter"><span class="counter" data-target="150">0</span>+</div>
+                            <h3 class="text-gray-500 font-bold text-[10px] uppercase tracking-widest" data-t="stats-3-l">نوع من المنتجات</h3>
+                        </div>
+                    </div>
+
+                    <!-- Sector Chart Area -->
+                    <div class="md:col-span-6 md:row-span-2 glass-card p-10 rounded-[3rem] border border-white/10 relative overflow-hidden flex flex-col justify-between group">
+                        <div class="flex justify-between items-center mb-6 relative z-20">
+                            <h3 class="text-white/80 font-black text-[11px] uppercase tracking-[0.2em]" data-t="stats-chart-title">توزيع القطاعات</h3>
+                            <div class="w-2 h-2 rounded-full bg-kraft-500 shadow-[0_0_10px_rgba(217,119,6,0.8)] animate-pulse"></div>
+                        </div>
+                        <div class="flex-grow relative z-10 w-full min-h-[220px] transition-transform duration-1000 group-hover:scale-[1.02]">
+                            <canvas id="productionChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Quality Standards -->
+                    <div class="md:col-span-3 md:row-span-2 glass-card p-10 rounded-[3rem] border border-white/10 flex flex-col justify-between group overflow-hidden relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-green-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                        <div class="relative z-10">
+                            <div class="w-14 h-14 rounded-2xl bg-green-500/10 border border-green-500/20 flex items-center justify-center text-green-400 mb-8 group-hover:rotate-[360deg] transition-transform duration-1000">
+                                <i class="fa-solid fa-shield-halved text-2xl"></i>
+                            </div>
+                            <h3 class="text-gray-400 font-bold text-[10px] uppercase tracking-widest mb-4" data-t="stats-4-l">معايير الجودة</h3>
+                            <div class="text-white text-6xl font-black mt-2">
+                                <span class="counter" data-target="100">0</span><span class="text-green-500 font-light">%</span>
+                            </div>
+                        </div>
+                        <div class="relative z-10 text-[10px] text-green-500/50 font-black tracking-widest uppercase mt-4">Certified ISO Standard</div>
+                    </div>
+
+                    <!-- 24/7 Operations -->
+                    <div class="md:col-span-3 md:row-span-2 rounded-[3rem] border border-kraft-500/30 bg-gradient-to-br from-kraft-600/20 via-black to-black p-10 flex flex-col justify-between shadow-[inset_0_0_50px_rgba(217,119,6,0.1)] group relative overflow-hidden">
+                        <div class="absolute -left-10 -bottom-10 w-40 h-40 bg-kraft-500/10 blur-[60px] group-hover:bg-kraft-500/20 transition-all duration-700"></div>
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-2 mb-8">
+                                <span class="w-2 h-2 rounded-full bg-red-500 animate-ping"></span>
+                                <span class="text-white font-black text-[11px] uppercase tracking-widest" data-t="stats-ops">تشغيل متواصل</span>
+                            </div>
+                            <div class="text-kraft-500 text-6xl font-black tracking-tighter leading-none mb-2">24 / 7</div>
+                            <p class="text-gray-500 text-[10px] font-medium leading-relaxed max-w-[120px]">دعم كامل وعمليات إنتاج لا تتوقف لخدمة شركائنا.</p>
+                        </div>
+                        <div class="relative z-10 w-full h-[1px] bg-white/10 group-hover:bg-kraft-500/50 transition-colors"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS & QUALITY CAROUSEL -->
+        <section class="py-32 w-full relative z-10 overflow-hidden" id="cert-carousel-section">
+            <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(217,119,6,0.05)_0%,transparent_70%)] pointer-events-none"></div>
+            
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-20 relative">
+                <div class="flex flex-col items-center text-center section-header-reveal">
+                    <span class="px-5 py-2 bg-kraft-500/10 border border-kraft-500/20 text-kraft-500 text-[10px] font-black uppercase tracking-[0.4em] rounded-full mb-8 shadow-sm" data-t="cert-badge">الالتزام بالمعايير</span>
+                    <h2 class="text-3xl md:text-6xl font-black text-white leading-[1.1] mb-8" data-t="cert-title">شهادات الاعتماد والجودة</h2>
+                    <p class="text-gray-500 max-w-2xl text-sm md:text-base leading-relaxed opacity-80" data-t="cert-desc">نظهر التزامنا الراسخ بالجودة والسلامة والمعايير الصناعية من خلال اعتمادات كبرى الهيئات الدولية.</p>
+                </div>
+            </div>
+
+            <!-- Carousel Wrapper -->
+            <div class="relative w-full max-w-7xl mx-auto px-4 group">
+                <!-- Navigation -->
+                <div class="flex justify-center gap-4 mb-10 md:absolute md:top-1/2 md:-translate-y-1/2 md:left-0 md:right-0 md:z-30 md:pointer-events-none md:px-4 md:mb-0">
+                    <button id="cert-prev" class="pointer-events-auto w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/40 backdrop-blur-xl border border-white/10 flex items-center justify-center text-white hover:bg-kraft-500 hover:text-black hover:border-kraft-500 transition-all shadow-xl md:opacity-0 md:group-hover:opacity-100 md:-translate-x-10 md:ltr:translate-x-10 md:group-hover:translate-x-0">
+                        <i class="fa-solid fa-arrow-right ltr:rotate-180"></i>
+                    </button>
+                    <button id="cert-next" class="pointer-events-auto w-10 h-10 md:w-12 md:h-12 rounded-full bg-black/40 backdrop-blur-xl border border-white/10 flex items-center justify-center text-white hover:bg-kraft-500 hover:text-black hover:border-kraft-500 transition-all shadow-xl md:opacity-0 md:group-hover:opacity-100 md:translate-x-10 md:ltr:-translate-x-10 md:group-hover:translate-x-0">
+                        <i class="fa-solid fa-arrow-left ltr:rotate-180"></i>
+                    </button>
+                </div>
+
+                <div class="carousel-container overflow-hidden rounded-[4rem] border border-white/5 bg-white/[0.01] shadow-2xl">
+                    <div id="cert-track" class="flex transition-transform duration-1000 ease-[cubic-bezier(0.23,1,0.32,1)] items-center">
+                        <!-- Cert 1 -->
+                        <div class="flex-none w-full sm:w-1/2 lg:w-1/3 p-16 flex flex-col items-center justify-center border-r border-white/5 group/logo">
+                            <div class="relative transition-transform duration-700 group-hover/logo:scale-110">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776896652/certifications-5_rwoffc.webp" class="h-40 md:h-48 w-auto object-contain grayscale opacity-40 group-hover/logo:grayscale-0 group-hover/logo:opacity-100 transition-all duration-700" alt="ISO 9001">
+                                <div class="absolute -inset-8 bg-kraft-500/10 blur-3xl rounded-full opacity-0 group-hover/logo:opacity-100 transition-opacity duration-700"></div>
+                            </div>
+                            <p class="mt-8 text-[11px] font-black uppercase text-gray-600 tracking-[0.3em] group-hover/logo:text-kraft-500 transition-colors">ISO 9001:2015</p>
+                        </div>
+                        <!-- Cert 2 -->
+                        <div class="flex-none w-full sm:w-1/2 lg:w-1/3 p-16 flex flex-col items-center justify-center border-r border-white/5 group/logo">
+                            <div class="relative transition-transform duration-700 group-hover/logo:scale-110">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776896652/certifications-1_nsvte7.webp" class="h-40 md:h-48 w-auto object-contain grayscale opacity-40 group-hover/logo:grayscale-0 group-hover/logo:opacity-100 transition-all duration-700" alt="SGS">
+                            </div>
+                            <p class="mt-8 text-[11px] font-black uppercase text-gray-600 tracking-[0.3em] group-hover/logo:text-kraft-500 transition-colors">SGS Certified</p>
+                        </div>
+                        <!-- Cert 3 -->
+                        <div class="flex-none w-full sm:w-1/2 lg:w-1/3 p-16 flex flex-col items-center justify-center border-r border-white/5 group/logo">
+                            <div class="relative transition-transform duration-700 group-hover/logo:scale-110">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776896652/sedex_vxntls.webp" class="h-40 md:h-48 w-auto object-contain grayscale opacity-40 group-hover/logo:grayscale-0 group-hover/logo:opacity-100 transition-all duration-700" alt="Sedex">
+                            </div>
+                            <p class="mt-8 text-[11px] font-black uppercase text-gray-600 tracking-[0.3em] group-hover/logo:text-kraft-500 transition-colors">Sedex Member</p>
+                        </div>
+                        <!-- Cert 4 -->
+                        <div class="flex-none w-full sm:w-1/2 lg:w-1/3 p-16 flex flex-col items-center justify-center border-r border-white/5 group/logo">
+                            <div class="relative transition-transform duration-700 group-hover/logo:scale-110">
+                                <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776896652/certifications-4_t6ffua.webp" class="h-40 md:h-48 w-auto object-contain grayscale opacity-40 group-hover/logo:grayscale-0 group-hover/logo:opacity-100 transition-all duration-700" alt="ISO 14001">
+                            </div>
+                            <p class="mt-8 text-[11px] font-black uppercase text-gray-600 tracking-[0.3em] group-hover/logo:text-kraft-500 transition-colors">ISO 14001</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pagination Dots -->
+                <div class="flex justify-center gap-3 mt-12" id="cert-pagination">
+                    <!-- Dots will be generated via JS -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="w-full bg-black border-t border-white/5 pt-20 pb-10 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Branding -->
+                <div class="space-y-6">
+                    <img src="https://res.cloudinary.com/dojt3kryr/image/upload/f_auto,q_auto/v1776042845/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_1_yswqi1.png" class="h-14 w-auto object-contain brightness-110" alt="Kraft Pack">
+                    <p class="text-gray-400 leading-relaxed text-sm" data-t="foo-about">كرافت باك هي شريكك الأول لحلول الكرتون المضلع، نقود الابتكار في مجال التغليف منذ عام 2016.</p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all border border-white/5"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all border border-white/5"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all border border-white/5"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fast Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:right-0 ltr:after:left-0 ltr:after:right-auto after:w-10 after:h-1 after:bg-kraft-600 after:rounded-full" data-t="foo-links">روابط سريعة</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-home">الرئيسية</span></a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-about">عن الشركة</span></a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-products">المنتجات</span></a></li>
+                        <li><a href="quality.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-quality">الجودة</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:right-0 ltr:after:left-0 ltr:after:right-auto after:w-10 after:h-1 after:bg-kraft-600 after:rounded-full" data-t="foo-contact">معلومات التواصل</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot mt-1.5 text-kraft-500"></i>
+                            <span class="text-gray-400 text-sm leading-relaxed" data-t="foo-address">مدينة العاشر من رمضان، المنطقة الصناعية، مصر</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-kraft-500"></i>
+                            <span class="text-gray-400 text-sm font-mono ltr:font-sans" dir="ltr" data-t="foo-phone">+20 123 456 7890</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-kraft-500"></i>
+                            <span class="text-gray-400 text-sm" data-t="foo-email">info@kraftpack-eg.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter (Simple for style) -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 opacity-50">Industrial Partner</h4>
+                    <div class="bg-gradient-to-br from-kraft-600 to-kraft-900 p-6 rounded-3xl relative overflow-hidden group">
+                        <i class="fa-solid fa-boxes-stacked absolute -bottom-4 -right-4 text-7xl text-black/20 group-hover:scale-110 transition-transform duration-700"></i>
+                        <p class="text-white/90 text-sm font-bold mb-4 relative z-10">نحن نؤمن بأن الحماية هي أساس النجاح.</p>
+                        <a href="contact.html" class="inline-block py-2 px-4 bg-white text-kraft-900 rounded-full text-xs font-black hover:bg-gray-100 transition-colors relative z-10">اطلب الاستشارة</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 py-8">
+                <p class="text-gray-500 text-[10px] text-center md:text-right ltr:md:text-left" data-t="foo-rights">© 2026 كرافت باك. صنعت بكل دقة وجودة.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-[9px] transition-colors uppercase tracking-widest">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-[9px] transition-colors uppercase tracking-widest">Terms of Service</a>
+                </div>
+            </div>
+            <!-- Padding for mobile dock -->
+            <div class="h-20 lg:hidden"></div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

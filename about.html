@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kraft Pack | من نحن</title>
+    <meta name="title" content="Kraft Pack | عن شركة كرافت باك لصناعة الكرتون">
+    <meta name="description" content="تعرف على شركة كرافت باك، رائدة مشاريع التغليف والتعبئة في مصر. ندمج الابتكار مع الجودة في خطوط إنتاج الكرتون المضلع لتلبية احتياجات السوق.">
+    <meta name="keywords" content="من نحن كرافت باك, عن مصنع كرتون, تاريخ الشركة, رؤية كرافت باك, مهمة التصنيع">
+    <meta name="author" content="Kraft Pack">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://kraftpack.com/about.html">
+    <meta property="og:title" content="Kraft Pack | عن الشركة وتاريخنا">
+    <meta property="og:description" content="رحلتنا بدأت برؤية لتطوير صناعة التغليف وتوفير حماية كاملة. تعرف على قدراتنا وطموحنا ورسالتنا لعملائنا في السوق المحلي والإقليمي.">
+    <meta property="og:image" content="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957847/flexo_printing_eekfft.png">
+    <meta property="og:site_name" content="Kraft Pack">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://kraftpack.com/about.html">
+    <meta name="twitter:title" content="Kraft Pack | عن الشركة وتاريخنا">
+    <meta name="twitter:description" content="رحلتنا بدأت برؤية لتطوير صناعة التغليف وتوفير حماية كاملة. تعرف على قدراتنا وطموحنا.">
+    <meta name="twitter:image" content="https://res.cloudinary.com/dojt3kryr/image/upload/v1776957847/flexo_printing_eekfft.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Cairo', 'sans-serif'] }, colors: { kraft: { 400: '#fbbf24', 500: '#f59e0b', 600: '#d97706', 700: '#b45309', 800: '#92400e' } } } } }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dojt3kryr/image/upload/v1776023462/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_k6z9uu.png">
+</head>
+<body class="selection:bg-kraft-600 selection:text-white flex flex-col min-h-screen">
+    <div class="bg-orb orb-kraft"></div>
+    <div class="bg-orb orb-white"></div>
+
+    <!-- Mobile App Dock -->
+    <nav class="mobile-dock flex lg:hidden">
+        <a href="index.html" class="dock-item" data-tooltip="الرئيسية" data-tt="tip-home"><i class="fa-solid fa-home text-xl"></i></a>
+        <a href="about.html" class="dock-item active" data-tooltip="عن الشركة" data-tt="tip-about"><i class="fa-solid fa-building text-xl"></i></a>
+        <a href="products.html" class="dock-item" data-tooltip="المنتجات" data-tt="tip-products"><i class="fa-solid fa-box-open text-xl"></i></a>
+        <a href="quality.html" class="dock-item" data-tooltip="الجودة والتصنيع" data-tt="tip-quality"><i class="fa-solid fa-check-double text-xl"></i></a>
+        <a href="contact.html" class="dock-item" data-tooltip="تواصل معنا" data-tt="tip-contact"><i class="fa-solid fa-envelope text-xl"></i></a>
+    </nav>
+
+    <!-- Header -->
+    <header class="fixed top-0 w-full z-50 p-4 sm:p-6 pointer-events-none">
+        <div class="max-w-7xl mx-auto flex justify-between items-center bg-black/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-2 sm:p-3 pointer-events-auto shadow-[0_10px_30px_rgba(0,0,0,0.5)]">
+            <div class="flex-shrink-0 ml-4 rtl:ml-0 ltr:mr-4">
+                <a href="index.html" class="block">
+                    <img src="https://res.cloudinary.com/dojt3kryr/image/upload/f_auto,q_auto/v1776042845/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_1_yswqi1.png" class="h-9 md:h-12 w-auto object-contain" alt="Kraft Pack">
+                </a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden lg:flex items-center gap-6 xl:gap-8 px-6 py-2 bg-white/5 rounded-2xl border border-white/5 mx-4">
+                <a href="index.html" class="text-gray-300 font-bold hover:text-kraft-400 transition-colors" data-t="nav-home">الرئيسية</a>
+                <a href="about.html" class="text-white font-bold hover:text-kraft-400 transition-colors" data-t="nav-about">عن الشركة</a>
+                <a href="products.html" class="text-gray-300 font-bold hover:text-kraft-400 transition-colors" data-t="nav-products">المنتجات</a>
+                <a href="quality.html" class="text-gray-300 font-bold hover:text-kraft-400 transition-colors" data-t="nav-quality">الجودة</a>
+                <a href="contact.html" class="text-gray-300 font-bold hover:text-kraft-400 transition-colors" data-t="nav-contact">تواصل معنا</a>
+            </nav>
+
+            <div class="flex items-center gap-2 sm:gap-3 flex-nowrap">
+                <button id="theme-toggle" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full flex-shrink-0 bg-white/5 border border-white/10 flex items-center justify-center text-gray-300 hover:text-kraft-400 hover:bg-white/10 transition-all backdrop-blur-md" aria-label="Toggle Theme">
+                    <i class="fa-solid fa-moon pointer-events-none"></i>
+                </button>
+                <button id="lang-toggle" class="w-9 h-9 sm:w-10 sm:h-10 rounded-full flex-shrink-0 bg-white/5 border border-white/10 flex items-center justify-center font-bold text-[10px] sm:text-sm text-gray-300 hover:text-kraft-400 hover:bg-white/10 transition-all backdrop-blur-md" aria-label="Toggle Language">
+                    EN
+                </button>
+                <a href="contact.html" class="hidden xs:inline-block whitespace-nowrap px-4 sm:px-6 py-2 sm:py-2.5 bg-gradient-to-r from-kraft-500 to-kraft-700 hover:scale-105 text-white rounded-full text-xs sm:text-sm font-black transition-all shadow-[0_0_20px_rgba(217,119,6,0.3)]" data-t="cta-pricing">
+                    اطلب عرض سعر
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Simple Preloader for Inner Pages -->
+    <div id="preloader" class="fixed inset-0 z-[1000] flex items-center justify-center bg-black/95 backdrop-blur-sm pointer-events-auto">
+        <div class="preloader-icon flex flex-col items-center justify-center w-full max-w-[200px] relative z-30 opacity-100">
+            <img src="https://res.cloudinary.com/dojt3kryr/image/upload/v1776023462/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_k6z9uu.png" class="w-16 md:w-20 mb-5 animate-pulse drop-shadow-[0_0_15px_rgba(217,119,6,0.5)]" alt="Kraft Pack Icon">
+            <div class="w-full h-1.5 bg-white/10 rounded-full overflow-hidden mb-3 relative">
+                <div class="h-full bg-kraft-500 rounded-full w-0" id="preloaderBar"></div>
+            </div>
+            <p class="text-xs sm:text-sm font-semibold text-white/90 tracking-widest drop-shadow-md" data-t="pre-loading">تجهيز المصنع...</p>
+        </div>
+    </div>
+
+    <main class="flex-grow pt-32 pb-24 z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center">
+        <div class="w-full">
+            <div class="text-center mb-16 gsap-reveal">
+                <h1 class="text-4xl md:text-5xl font-black text-white" data-t="abt-full-title">عن Kraft Pack</h1>
+                <div class="w-24 h-1 bg-kraft-500 mx-auto mt-6 rounded-full inline-block"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div class="flex flex-col gap-5 text-gray-300 text-lg leading-relaxed font-semibold cursor-text gsap-reveal">
+                    <p data-t="abt-p1">كرافت باك هي شركة متخصصة في تصنيع الكرتون المضلع وحلول التغليف المتكاملة، حيث نعمل على تلبية احتياجات السوق المصري من خلال تقديم منتجات تجمع بين الجودة العالية، المتانة، والتصميم العملي.</p>
+                    <p data-t="abt-p2">نعتمد في انتاجنا على استخدام خامات مختارة بعناية، وتقنيات تصنيع حديثة، لضمان تقديم منتجات تلبي أعلى معايير الأداء والجودة.</p>
+                    <p data-t="abt-p3">نؤمن بأن التغليف ليس مجرد وسيلة حماية، بل عنصر أساسي في نجاح المنتج، لذلك نحرص على تقديم حلول مخصصة تساعد عملاءنا على تحسين كفاءة النقل والتخزين، وتقليل الفاقد، وتعزيز صورة علامتهم التجارية في السوق.</p>
+                    <p data-t="abt-p4">تمكننا قدراتنا الإنتاجية من تصنيع مجموعة واسعة من المواصفات حسب طلب العميل، بما في ذلك اختلاف أنواع الفلوت، درجات التحمل، والمقاسات.</p>
+                    <p data-t="abt-p5">من خلال فهمنا العميق لاحتياجات العملاء، نسعى لبناء شراكات طويلة الأمد قائمة على الثقة، الالتزام، وتقديم قيمة حقيقية.</p>
+                </div>
+                <div class="flex flex-col gap-6">
+                    <div class="glass-card p-10 border-l-4 border-l-kraft-500 gsap-reveal" style="transition-delay: 0.1s">
+                        <h2 class="text-2xl font-bold text-white mb-4" data-t="v-title">🎯 الرؤية (Vision)</h2>
+                        <p class="text-gray-400 font-semibold cursor-text text-sm md:text-base leading-relaxed" data-t="v-desc">أن نكون الشريك الصناعي المفضل في مجال حلول الكرتون المضلع في مصر، من خلال تقديم منتجات عالية الجودة تدعم نمو عملائنا وتعزز كفاءة سلاسل الإمداد لديهم.</p>
+                    </div>
+                    <div class="glass-card p-10 border-l-4 border-l-kraft-500 gsap-reveal" style="transition-delay: 0.2s">
+                        <h2 class="text-2xl font-bold text-white mb-4" data-t="m-title">🎯 الرسالة (Mission)</h2>
+                        <p class="text-gray-400 font-semibold cursor-text text-sm md:text-base leading-relaxed" data-t="m-desc">نلتزم في كرافت باك بتصنيع وتقديم حلول تغليف مبتكرة وموثوقة، باستخدام أفضل الخامات وأحدث تقنيات الإنتاج، مع التركيز على تلبية احتياجات عملائنا من خلال منتجات مخصصة، جودة مستقرة، وخدمة تعتمد على السرعة والمرونة، بما يحقق قيمة مستدامة لجميع شركائنا.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="w-full bg-black border-t border-white/5 pt-20 pb-10 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <!-- Branding -->
+                <div class="space-y-6">
+                    <img src="https://res.cloudinary.com/dojt3kryr/image/upload/f_auto,q_auto/v1776042845/WhatsApp_Image_2026-04-12_at_8.12.39_PM-removebg-preview_1_yswqi1.png" class="h-14 w-auto object-contain brightness-110" alt="Kraft Pack">
+                    <p class="text-gray-400 leading-relaxed text-sm" data-t="foo-about">كرافت باك هي شريكك الأول لحلول الكرتون المضلع، نقود الابتكار في مجال التغليف منذ عام 2016.</p>
+                    <div class="flex items-center gap-4">
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all border border-white/5"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all border border-white/5"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-gray-400 hover:text-kraft-400 hover:bg-white/10 transition-all border border-white/5"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fast Links -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:right-0 ltr:after:left-0 ltr:after:right-auto after:w-10 after:h-1 after:bg-kraft-600 after:rounded-full" data-t="foo-links">روابط سريعة</h4>
+                    <ul class="space-y-4">
+                        <li><a href="index.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-home">الرئيسية</span></a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-about">عن الشركة</span></a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-products">المنتجات</span></a></li>
+                        <li><a href="quality.html" class="text-gray-400 hover:text-kraft-400 transition-colors flex items-center gap-2 group"><i class="fa-solid fa-chevron-left ltr:fa-chevron-right text-[10px] group-hover:translate-x-1 ltr:group-hover:-translate-x-1 transition-transform"></i> <span data-t="nav-quality">الجودة</span></a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 relative pb-3 after:content-[''] after:absolute after:bottom-0 after:right-0 ltr:after:left-0 ltr:after:right-auto after:w-10 after:h-1 after:bg-kraft-600 after:rounded-full" data-t="foo-contact">معلومات التواصل</h4>
+                    <ul class="space-y-6">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-location-dot mt-1.5 text-kraft-500"></i>
+                            <span class="text-gray-400 text-sm leading-relaxed" data-t="foo-address">مدينة العاشر من رمضان، المنطقة الصناعية، مصر</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-phone text-kraft-500"></i>
+                            <span class="text-gray-400 text-sm font-mono ltr:font-sans" dir="ltr" data-t="foo-phone">+20 123 456 7890</span>
+                        </li>
+                        <li class="flex items-center gap-4">
+                            <i class="fa-solid fa-envelope text-kraft-500"></i>
+                            <span class="text-gray-400 text-sm" data-t="foo-email">info@kraftpack-eg.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter (Simple for style) -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-8 opacity-50">Industrial Partner</h4>
+                    <div class="bg-gradient-to-br from-kraft-600 to-kraft-900 p-6 rounded-3xl relative overflow-hidden group">
+                        <i class="fa-solid fa-boxes-stacked absolute -bottom-4 -right-4 text-7xl text-black/20 group-hover:scale-110 transition-transform duration-700"></i>
+                        <p class="text-white/90 text-sm font-bold mb-4 relative z-10">نحن نؤمن بأن الحماية هي أساس النجاح.</p>
+                        <a href="contact.html" class="inline-block py-2 px-4 bg-white text-kraft-900 rounded-full text-xs font-black hover:bg-gray-100 transition-colors relative z-10">اطلب الاستشارة</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-xs text-center md:text-right ltr:md:text-left" data-t="foo-rights">© 2026 كرافت باك. صنعت بكل دقة وجودة.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-500 hover:text-white text-[10px] transition-colors uppercase tracking-widest">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white text-[10px] transition-colors uppercase tracking-widest">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
