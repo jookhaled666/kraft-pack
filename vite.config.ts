@@ -19,5 +19,16 @@ export default defineConfig(({mode}) => {
       host: '0.0.0.0',
       hmr: process.env.DISABLE_HMR !== 'true',
     },
+    build: {
+      rollupOptions: {
+        input: {
+          main: path.resolve(__dirname, 'index.html'),
+          about: path.resolve(__dirname, 'about.html'),
+          contact: path.resolve(__dirname, 'contact.html'),
+          products: path.resolve(__dirname, 'products.html'),
+          quality: path.resolve(__dirname, 'quality.html'),
+        },
+      },
+    },
   };
 });

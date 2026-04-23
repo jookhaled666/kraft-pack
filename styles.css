@@ -1,3 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Cairo", sans-serif;
+  --color-kraft-400: #fbbf24;
+  --color-kraft-500: #f59e0b;
+  --color-kraft-600: #d97706;
+  --color-kraft-700: #b45309;
+  --color-kraft-800: #92400e;
+}
+
 * {
     -webkit-tap-highlight-color: transparent;
 }
